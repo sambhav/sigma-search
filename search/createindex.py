@@ -28,10 +28,10 @@ for page in doc:
 
                 print arr, page['Title'], page['URL']
                 writer.add_document(title=page['Title'], 
-                					path=page['URL'], 
-                					imgpath=arr[0], 
-                					imgname=arr[1],
-                                    imghash=arr[2])
+					path=page['URL'], 
+					imgpath=arr[0], 
+					imgname=arr[1],
+                                    	imghash=arr[2])
         except:
             pass
 
