@@ -1,0 +1,5 @@
+Flask==0.10.1
+ImageHash==1.0
+Pillow==2.9.0
+Scrapy==1.0.5
+Whoosh==2.7.3
