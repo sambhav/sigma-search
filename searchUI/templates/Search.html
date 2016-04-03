@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Sigma Search</title>
+    <link rel='shortcut icon' href='static/icon.ico' type='image/x-icon'/ > 
+    <link rel="stylesheet" href="static/css/bootstrap.css">
+    <link href="static/css/main.css" rel="stylesheet"> </head>
+
+<body>
+
+    <div class="container">
+
+        <a href="/Reverse"><div class="btn btn-primary" style="margin-top: 0px;margin-left: 90%;"><span style="color:white;">Reverse Image Search</span></div></a> 
+        <div class='img'> <img src='static/logo.png'> </div>
+        <h3 style='text-align: center; color: #2baae1; font: 30px Roboto-Regular;'>Sigma Search</h3>
+
+
+        <div class="col-md-6 col-md-offset-3">
+            <form class="form-signin" role="form">
+                <input type="text" id="searchQ" name="searchq" class="form-control" placeholder="Enter Your Search Query" required autofocus/>
+                <br>
+                <input type="hidden" id="activeTab" name="activeTab" value="Search">
+                <ul id="options" class="nav nav-pills nav-justified">
+                    <li id="search" class="active"><a data-toggle="pill" href="#Search">Search</a> </li>
+                    <li id="document"><a data-toggle="pill" href="#Document">Document</a> </li>
+                    <li id="image"><a data-toggle="pill" href="#Image">Image</a> </li>
+                </ul>
+            </form>
+        </div>
+
+
+        <div class="tab-content col-md-10 col-md-offset-1">
+            <div id="Suggestions"></div>
+            <div id="Search" class="tab-pane fade in active"> </div>
+            <div id="Document" class="tab-pane fade"></div>
+            <div id="Image" class="tab-pane fade"></div>
+        </div>
+
+
+    </div>
+
+
+    <script type="text/javascript" src="static/js/bootstrap-filestyle.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="static/js/script.js"></script>
+
+</body>
+
+</html>
